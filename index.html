@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audrey Choi | Personal Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f7fa;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#3b82f6;
+            color:white;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{
+            font-size:48px;
+        }
+
+        header p{
+            font-size:20px;
+            margin-top:10px;
+        }
+
+        nav{
+            background:white;
+            padding:15px;
+            text-align:center;
+            box-shadow:0 2px 8px rgba(0,0,0,.1);
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            margin:0 20px;
+            text-decoration:none;
+            color:#3b82f6;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#1d4ed8;
+        }
+
+        section{
+            max-width:900px;
+            margin:40px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,.08);
+        }
+
+        h2{
+            color:#3b82f6;
+            margin-bottom:15px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .projects{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            border:1px solid #ddd;
+            border-radius:8px;
+            padding:20px;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+        }
+
+        button{
+            margin-top:20px;
+            padding:12px 20px;
+            background:#3b82f6;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#2563eb;
+        }
+
+        a{
+            color:#2563eb;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#666;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Audrey Choi</h1>
+    <p>High School Student | STEM Enthusiast | Artist | Programmer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Hello! My name is Audrey, and I am a high school student passionate
+        about science, technology, art, and mathematics. I enjoy learning
+        about biology, chemistry, artificial intelligence, and programming.
+        Outside of academics, I love drawing, bowling, coding, and playing
+        the violin.
+    </p>
+
+    <button onclick="welcome()">Say Hello</button>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <ul>
+        <li>Python Programming</li>
+        <li>HTML & CSS</li>
+        <li>Problem Solving</li>
+        <li>Digital Art</li>
+        <li>Scientific Research</li>
+        <li>Public Speaking</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Science Research</h3>
+            <p>
+                Exploring biology, chemistry, and AI applications in healthcare.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>
+                Developing Python programs and web applications while learning
+                computer science.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Art Portfolio</h3>
+            <p>
+                Creating traditional and digital artwork for competitions and
+                personal projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:audreyes617@gmail.com">
+            audreyes617@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/audreyes617" target="_blank">
+            github.com/audreyes617
+        </a>
+    </p>
+
+    <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/audrey-choi-0506b132b" target="_blank">
+            linkedin.com/in/audrey-choi-0506b132b
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 Audrey Choi | Personal Website</p>
+</footer>
+
+<script>
+function welcome() {
+    alert("Welcome to my personal website!");
+}
+</script>
+
+</body>
+</html>
