@@ -1,234 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audrey Choi | Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audrey Choi | Personal Website</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        body{
-            background:#f5f7fa;
-            color:#333;
-            line-height:1.6;
-        }
+<style>
 
-        header{
-            background:#3b82f6;
-            color:white;
-            text-align:center;
-            padding:60px 20px;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        header h1{
-            font-size:48px;
-        }
+html{
+    scroll-behavior:smooth;
+}
 
-        header p{
-            font-size:20px;
-            margin-top:10px;
-        }
+body{
+    font-family:'Inter',sans-serif;
+    background:#faf8f4;
+    color:#4f4a45;
+    line-height:1.8;
+}
 
-        nav{
-            background:white;
-            padding:15px;
-            text-align:center;
-            box-shadow:0 2px 8px rgba(0,0,0,.1);
-            position:sticky;
-            top:0;
-        }
+/* ---------------- HERO ---------------- */
 
-        nav a{
-            margin:0 20px;
-            text-decoration:none;
-            color:#3b82f6;
-            font-weight:bold;
-            transition:0.3s;
-        }
+header{
+    background:linear-gradient(180deg,#efe4d6,#f9f6f2);
+    text-align:center;
+    padding:95px 20px 80px;
+    border-bottom:1px solid #ece2d5;
+}
 
-        nav a:hover{
-            color:#1d4ed8;
-        }
+header h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    color:#5b4735;
+    margin-bottom:12px;
+}
 
-        section{
-            max-width:900px;
-            margin:40px auto;
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 2px 10px rgba(0,0,0,.08);
-        }
+header p{
+    font-size:1.1rem;
+    color:#7c6957;
+}
 
-        h2{
-            color:#3b82f6;
-            margin-bottom:15px;
-        }
+.subtitle{
+    display:inline-block;
+    margin-top:25px;
+    padding:10px 22px;
+    background:white;
+    border-radius:30px;
+    color:#8b7560;
+    font-size:0.95rem;
+    box-shadow:0 8px 18px rgba(0,0,0,.05);
+}
 
-        ul{
-            padding-left:20px;
-        }
+/* ---------------- NAVIGATION ---------------- */
 
-        .projects{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-            gap:20px;
-        }
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(10px);
+    text-align:center;
+    padding:18px;
+    border-bottom:1px solid #ece6df;
+    z-index:100;
+}
 
-        .card{
-            border:1px solid #ddd;
-            border-radius:8px;
-            padding:20px;
-            transition:.3s;
-        }
+nav a{
+    text-decoration:none;
+    color:#7a6656;
+    margin:0 18px;
+    font-weight:500;
+    transition:.3s;
+}
 
-        .card:hover{
-            transform:translateY(-5px);
-            box-shadow:0 5px 15px rgba(0,0,0,.1);
-        }
+nav a:hover{
+    color:#b48a62;
+}
 
-        button{
-            margin-top:20px;
-            padding:12px 20px;
-            background:#3b82f6;
-            color:white;
-            border:none;
-            border-radius:5px;
-            cursor:pointer;
-            font-size:16px;
-            transition:0.3s;
-        }
+/* ---------------- CONTENT ---------------- */
 
-        button:hover{
-            background:#2563eb;
-        }
+section{
+    max-width:950px;
+    margin:45px auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 28px rgba(0,0,0,.05);
+}
 
-        a{
-            color:#2563eb;
-        }
+h2{
+    font-family:'Playfair Display',serif;
+    color:#644f3d;
+    margin-bottom:20px;
+    font-size:2rem;
+}
 
-        a:hover{
-            text-decoration:underline;
-        }
+ul{
+    padding-left:20px;
+}
 
-        footer{
-            text-align:center;
-            padding:30px;
-            color:#666;
-        }
-    </style>
+li{
+    margin-bottom:14px;
+}
+
+/* ---------------- PROJECT CARDS ---------------- */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:#fcfaf7;
+    border:1px solid #eee2d4;
+    border-radius:16px;
+    padding:25px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    box-shadow:0 10px 22px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#6c5645;
+}
+
+/* ---------------- BUTTON ---------------- */
+
+button{
+    margin-top:28px;
+    padding:13px 26px;
+    background:#b89572;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#9f7b57;
+}
+
+/* ---------------- CONTACT ---------------- */
+
+.contact p{
+    margin-bottom:18px;
+}
+
+a{
+    color:#9f7b57;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    color:#8a7b6e;
+    font-size:14px;
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Audrey Choi</h1>
-    <p>High School Student | STEM Enthusiast | Artist | Programmer</p>
+
+<h1>Audrey Choi</h1>
+
+<p>Bergen County Academies • 9th Grade</p>
+
+<div class="subtitle">
+Science • Technology • Art • Programming
+</div>
+
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-    <h2>About Me</h2>
 
-    <p>
-        Hello! My name is Audrey, and I am a high school student passionate
-        about science, technology, art, and mathematics. I enjoy learning
-        about biology, chemistry, artificial intelligence, and programming.
-        Outside of academics, I love drawing, bowling, coding, and playing
-        the violin.
-    </p>
+<h2>About Me</h2>
 
-    <button onclick="welcome()">Say Hello</button>
+<p>
+Hi! I'm Audrey, a rising sophomore in the <strong>Academy for the Advancement of Science and Technology</strong> at <strong>Bergen County Academies</strong>. I love exploring the intersection of science and technology, especially biology and chemistry. Outside of academics, I enjoy creating art, bowling, coding, and continuously learning through research and hands-on projects.
+</p>
+
+<button onclick="welcome()">Say Hello!</button>
+
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
 
-    <ul>
-        <li>Python Programming</li>
-        <li>HTML & CSS</li>
-        <li>Problem Solving</li>
-        <li>Digital Art</li>
-        <li>Scientific Research</li>
-        <li>Public Speaking</li>
-    </ul>
+<h2>Skills</h2>
+
+<ul>
+<li><strong>Art</strong> — Painting, Drawing, and Mixed Media</li>
+<li><strong>Python</strong></li>
+<li><strong>Problem Solving</strong></li>
+<li><strong>HTML & CSS</strong></li>
+<li><strong>Science Research</strong></li>
+</ul>
+
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
 
-    <div class="projects">
+<h2>Projects & Interests</h2>
 
-        <div class="card">
-            <h3>Science Research</h3>
-            <p>
-                Exploring biology, chemistry, and AI applications in healthcare.
-            </p>
-        </div>
+<div class="projects">
 
-        <div class="card">
-            <h3>Programming</h3>
-            <p>
-                Developing Python programs and web applications while learning
-                computer science.
-            </p>
-        </div>
+<div class="card">
+<h3>Science Research</h3>
 
-        <div class="card">
-            <h3>Art Portfolio</h3>
-            <p>
-                Creating traditional and digital artwork for competitions and
-                personal projects.
-            </p>
-        </div>
+<p>
+Exploring biology and chemistry through scientific research, experimentation, and inquiry.
+</p>
 
-    </div>
+</div>
+
+<div class="card">
+
+<h3>Programming</h3>
+
+<p>
+Python programming through ACSL competitions and developing web applications using HTML and CSS.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Art Portfolio</h3>
+
+<p>
+Traditional artwork including drawing, painting, and mixed media created for competitions and personal creative projects.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
+<section id="contact" class="contact">
 
-    <p>
-        <strong>Email:</strong>
-        <a href="mailto:audreyes617@gmail.com">
-            audreyes617@gmail.com
-        </a>
-    </p>
+<h2>Contact</h2>
 
-    <p>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/audreyes617" target="_blank">
-            github.com/audreyes617
-        </a>
-    </p>
+<p>
+<strong>Email</strong><br>
+<a href="mailto:audreyes617@gmail.com">
+audreyes617@gmail.com
+</a>
+</p>
 
-    <p>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/audrey-choi-0506b132b" target="_blank">
-            linkedin.com/in/audrey-choi-0506b132b
-        </a>
-    </p>
+<p>
+<strong>GitHub</strong><br>
+<a href="https://github.com/audreyes617" target="_blank">
+github.com/audreyes617
+</a>
+</p>
+
+<p>
+<strong>LinkedIn</strong><br>
+<a href="https://www.linkedin.com/in/audrey-choi-0506b132b" target="_blank">
+linkedin.com/in/audrey-choi-0506b132b
+</a>
+</p>
 
 </section>
 
 <footer>
-    <p>© 2026 Audrey Choi | Personal Website</p>
+
+© 2026 Audrey Choi
+
 </footer>
 
 <script>
 function welcome() {
-    alert("Welcome to my personal website!");
+    alert("Thanks for visiting my website!");
 }
 </script>
 
